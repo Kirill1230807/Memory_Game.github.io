@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div id="game-settings">
+    <div class="settings-container">
+        <h2>Налаштування гри</h2>
+        <div>
+            <label for="size">Розмір</label>
+            <select id="size">
+                <option value="4" selected>4x4</option>
+                <option value="5">5x5</option>
+                <option value="6">6x6</option>
+            </select>
+            <div>
+                <label for="difficulty">Складність</label>
+                <select id="difficulty">
+                    <option value="easy" data-time="180" selected>Легко (3 хв.)</option>
+                    <option value="normal" data-time="120">Нормально (2 хв.)</option>
+                    <option value="hard" data-time="60">Складно (1 хв.)</option>
+                </select>
+            </div>
+            <button id="reset-settings">Скинути налаштування</button>
+            <button id="start-game">Розпочати гру</button>
+        </div>
+    </div>
+</div>
+
+<section class="memory-game">
+    <!-- Картки додаються через JS -->
+</section>
+
+<div id="game-info">
+    <p>Час: <span id="timer">00:00</span></p>
+    <p>Кількість ходів: <span id="moves">0</span></p>
+    <button id="restart-game">Рестарт гри</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
